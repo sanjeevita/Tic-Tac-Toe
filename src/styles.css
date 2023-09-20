@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #d4e7ff;
+}
+
+/* Game board */
+.game-board {
+  width: 300px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Square buttons */
+.square {
+  width: 80px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, /* Top-left border */ 1px -1px 0 #000,
+    /* Top-right border */ -1px 1px 0 #000,
+    /* Bottom-left border */ 1px 1px 0 #000;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  cursor: pointer;
+  background: linear-gradient(120deg, #3498db, #2ecc71);
+  /* transition: background 0.3s ease-in-out; */
+}
+.square:hover {
+  background: #add8e6;
+}
+
+.square.X {
+  background-color: #3498db;
+  color: #fff;
+}
+.square.O {
+  background-color: #e74c3c;
+  color: rgb(167, 81, 81);
+}
+
+/* Game status */
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Move list */
+.game-info {
+  margin-top: 20px;
+}
+
+/* Move buttons */
+.game-info ol {
+  padding-left: 50px;
+}
+
+.game-info li {
+  margin-bottom: 5px;
+}
+
+.game-info button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.game-info button:hover {
+  background-color: #555;
+}

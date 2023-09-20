@@ -1,0 +1,4 @@
+GameContext -> create context and setup initial state
+Square -> button : props : value, onClick fn def in Board
+Board -> handleClick : renders board
+Game -> handlePlay resets state 
